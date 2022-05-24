@@ -66,9 +66,9 @@ const OurMission = () => {
 
       <div className="bg-lightMilk">
         {/* Container On1 */}
-        <div className="flex items-center flex-row space-x-5 px-20">
+        <div className="flex flex-col items-center space-x-5 md:px-20 md:flex-row">
           {/* Item One */}
-          <div className="py-5 px-3 w-1/2">
+          <div className="py-5 px-5 md:w-1/2">
             <p className="max-w-xl text-justify text-lg space-y-1">
               PYO Global Partners believe that government belongs to the people
               and not to the individuals who have found their ways to elected or
@@ -77,7 +77,7 @@ const OurMission = () => {
               offices as Lords and Rulers.
             </p>
 
-            <p className="py-3 max-w-xl text-justify text-lg space-y-1">
+            <p className="py-3 max-w-xl text-justify text-lg space-y-1 mt-10">
               PYO GLOBAL PARTNERS are committed to changing the paradigm and the
               presidential aspiration of a genuine servant-leader like Prof.
               Osinbajo, SAN creates the opportunity.
@@ -95,7 +95,7 @@ const OurMission = () => {
             </p>
           </div>
 
-          <div className="px-3 w-1/2">
+          <div className="pr-5 md:px-3 md:w-1/2">
             <img src={ProfImage} alt="prof" />
           </div>
         </div>

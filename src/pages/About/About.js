@@ -66,9 +66,8 @@ const About = () => {
 
       <div className="bg-lightMilk">
         {/* Container On1 */}
-        <div className="flex items-center flex-row space-x-5 px-20">
-          {/* Item One */}
-          <div className="py-5 px-3 w-1/2">
+        <div className="flex flex-col items-center space-x-5 md:px-20 md:flex-row">
+          <div className="py-5 px-3 md:w-1/2">
             <p className="max-w-xl text-justify text-lg space-y-1 mt-10">
               PYO Global Partners is a civic organization dedicated to the
               attainment of good governance in Nigeria. We are inspired and
@@ -80,8 +79,8 @@ const About = () => {
           </div>
 
           {/* Item Two */}
-          <div className="px-3 w-1/2">
-            <p className="max-w-xl text-justify text-lg space-y-1">
+          <div className="px-0 md:px-3 md:w-1/2">
+            <p className="max-w-xl text-justify text-lg space-y-1 mt-10">
               We believe Prof. Osinbajo is an exemplar of good governance and
               his public spirit tallies with our objective to work for and
               ensure the attainment of good in Nigeria and for Nigerians at all
@@ -91,10 +90,10 @@ const About = () => {
         </div>
 
         {/* Container Two */}
-        <div className="flex items-center flex-row space-x-5 px-20">
-          {/* Item One */}
-          <div className="flex flex-col py-5 px-3 w-1/2 space-x-3">
-            <p className="max-w-xl text-justify text-lg mt-10">
+        <div className="flex flex-col items-center space-x-5 px-5 md:px-20 md:flex-row">
+          <div className="py-5 md:px-3 md:w-1/2">
+          {/* <div className="flex flex-col py-5 px-3 w-1/2 space-x-3"> */}
+            <p className="max-w-xl text-justify text-lg space-y-1 mt-10">
               The organization is made up of patriotic Nigerians from all walks
               of life, spread out across the country and dispersed throughout
               the diaspora, who have committed to invest their time and
@@ -105,8 +104,7 @@ const About = () => {
             </p>
           </div>
 
-          {/* Item Two */}
-          <div className="px-3 w-1/2">
+          <div className="md:px-3 md:w-1/2">
             <p className="max-w-xl text-justify text-lg">
               PYO Global Partners is spearheaded by men and women of renown,
               integrity, young and old Nigerians well-known to the public and
@@ -117,7 +115,7 @@ const About = () => {
         </div>
 
         {/* Container Three */}
-        <div className="px-20 py-10">
+        <div className="px-5 md:px-20 py-10">
           <p className="w-3xl text-justify text-lg">
             PYO GLOBAL PARTNERS invite you and all Nigerians of good will to
             join hands to change Nigeria's story and set this country on the

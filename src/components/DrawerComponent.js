@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 import {
   Drawer,
   DrawerBody,
@@ -10,67 +10,91 @@ import {
   useDisclosure,
   Button,
   Input,
-  Flex, 
-  Text
-} from '@chakra-ui/react'
+  Flex,
+  Text,
+} from "@chakra-ui/react";
 
-const DrawerComponent = ({open, close, home, about, contact, click}) => {
-     const { isOpen, onOpen, onClose } = useDisclosure()
-    const handleClose=()=>{
-      close(false)
-     
-    }
+const DrawerComponent = ({ open, close, home, about, contact, click, ourmission }) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const handleClose = () => {
+    close(false);
+  };
 
-    const handleModal=()=>{
-      click()
-      close()
-    }
+  const handleModal = () => {
+    click();
+    close();
+  };
 
-    const handleHome=()=>{
-      home()
-      close()
-    }
+  const handleHome = () => {
+    home();
+    close();
+  };
 
-    const handleAbout=()=>{
-      about()
-      close()
-    }
+  const handleAbout = () => {
+    about();
+    close();
+  };
 
-    const handleContact=()=>{
-      contact()
-      close()
-    }
-    return (
-        <>
+  const handleContact = () => {
+    contact();
+    close();
+  };
+  return (
+    <>
       {/* <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
         Open
       </Button> */}
       <Drawer
         isOpen={open && onOpen}
-        placement='right'
+        placement="right"
         onClose={!open && onClose}
-       
-       
       >
         <DrawerOverlay />
-        <DrawerContent bg='darkgreen'>
-          <DrawerCloseButton  onClick={handleClose}/>
+        <DrawerContent bg="darkgreen">
+          <DrawerCloseButton onClick={handleClose} />
           {/* <DrawerHeader>Create your account</DrawerHeader> */}
 
-          <DrawerBody pt={12} >
-            <Flex color='white' align='center' fontSize='16px' fontWeight='500' gap={12} direction='column'>
-                <Flex gap={8} direction='column'>
-                      <Text onClick={handleHome} cursor='pointer'>Home</Text>
-                    <Text onClick={handleAbout} cursor='pointer'>About</Text>
-                    <Text onClick={ handleContact} cursor='pointer'>Contact</Text>
-                </Flex>
-                <Button variant='action' p={6} onClick={handleModal}>DONATE</Button>
+          <DrawerBody pt={12}>
+            <Flex
+              color="white"
+              align="center"
+              fontSize="16px"
+              fontWeight="500"
+              gap={12}
+              direction="column"
+            >
+              <Flex gap={8} direction="column">
+                <Text onClick={handleHome} cursor="pointer">
+                  Home
+                </Text>
+                <Text onClick={handleAbout} cursor="pointer">
+                  About
+                </Text>
+
+                <Text onClick={ourmission} cursor="pointer">
+                  Our Mission
+                </Text>
+
+                <Text onClick={ourmission} cursor="pointer">
+                  FAQ
+                </Text>
+
+                <Text onClick={""} cursor="pointer">
+                  Resources
+                </Text>
+                <Text onClick={handleContact} cursor="pointer">
+                  Contact
+                </Text>
+              </Flex>
+              <Button variant="action" p={6} onClick={handleModal}>
+                DONATE
+              </Button>
             </Flex>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
     </>
-    )
-}
+  );
+};
 
-export default DrawerComponent
+export default DrawerComponent;

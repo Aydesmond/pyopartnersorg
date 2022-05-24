@@ -120,8 +120,8 @@ const Donate = () => {
     publicKey: "pk_live_916d97b91b3daf0a5de0798b57b852806d1443f3",
     // publicKey:"pk_test_0cf400c602268d06bbba26454b61c1a4f858f698",
   });
+
   const onSuccess = (reference) => {
-    //    console.log('reference', reference)
     setSuccess(true);
 
     let payload = {
@@ -135,6 +135,7 @@ const Donate = () => {
       age: age,
       transaction_ref: reference.reference,
     };
+    
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     // // myHeaders.append("Authorization","Bearer" + JSON.parse(localStorage.getItem('jwt')));

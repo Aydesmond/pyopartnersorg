@@ -78,6 +78,7 @@ const Navbar = ({ click, about, home, contact, ourmission }) => {
         about={about}
         contact={contact}
         click={click}
+        ourmission={ourmission}
       />
     </Flex>
   );
