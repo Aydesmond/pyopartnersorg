@@ -35,6 +35,10 @@ const About = () => {
     navigate("/ourmission");
   };
 
+  const handleBoardNavigate = () => {
+    navigate("/our-board");
+  };
+
   return (
     <>
       <Flex w="100%" direction="column" h="auto">
@@ -54,6 +58,7 @@ const About = () => {
             home={handleHomeNavigate}
             contact={handleContactNavigate}
             ourmission={handleMissionNavigate}
+            ourboard={handleBoardNavigate}
           />
         </Flex>
       </Flex>
@@ -92,7 +97,7 @@ const About = () => {
         {/* Container Two */}
         <div className="flex flex-col items-center space-x-5 px-5 md:px-20 md:flex-row">
           <div className="py-5 md:px-3 md:w-1/2">
-          {/* <div className="flex flex-col py-5 px-3 w-1/2 space-x-3"> */}
+            {/* <div className="flex flex-col py-5 px-3 w-1/2 space-x-3"> */}
             <p className="max-w-xl text-justify text-lg space-y-1 mt-10">
               The organization is made up of patriotic Nigerians from all walks
               of life, spread out across the country and dispersed throughout

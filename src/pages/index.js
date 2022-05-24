@@ -63,6 +63,10 @@ const Home = () => {
     navigate("/ourmission");
   };
 
+  const handleBoardNavigate = () => {
+    navigate("/our-board");
+  };
+
   return (
     <Flex w="100%" direction="column" h="auto">
       {/* <CallModal /> */}
@@ -81,6 +85,7 @@ const Home = () => {
           home={handleHomeNavigate}
           contact={handleContactNavigate}
           ourmission={handleMissionNavigate}
+          ourboard={handleBoardNavigate}
         />
 
         <Hero click={handleDonateNavigate} />

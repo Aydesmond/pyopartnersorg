@@ -40,7 +40,7 @@ export default function BankDetailsModal({ isOpen, onOpen, onClose }) {
   const handleClose = () => {
     setDonationMade(false);
     setDonateLater(false);
-    onClose()
+    onClose();
   };
   return (
     <Modal size="lg" isOpen={isOpen} onClose={onClose}>
@@ -56,8 +56,9 @@ export default function BankDetailsModal({ isOpen, onOpen, onClose }) {
 
           <ModalBody mt="50px" mb="40px" px={{ base: "15px", md: "30px" }}>
             <Text textAlign="center" fontSize="18px" fontWeight="400">
-              Thank you for donating to the PYO Campaign. We will confirm your
-              donation.
+              Thank you for donating towards an undeniably good cause. Because
+              of your donation, we are one step closer to fulfilling our four
+              key goals.
             </Text>
 
             <Button
@@ -141,6 +142,7 @@ export default function BankDetailsModal({ isOpen, onOpen, onClose }) {
               The Official PYO Fundrainsing Campaign is managed by PYO Global
               Movement for Good Governance.
             </Text>
+
             <Text fontSize="18px" mt="20px" fontWeight="400">
               Please make your donations to: PYO Global Movement For Good
               Governance
@@ -166,9 +168,11 @@ export default function BankDetailsModal({ isOpen, onOpen, onClose }) {
             >
               UBA: 1025182078
             </Text>
+
             <Text textAlign="center" fontSize="18px" mt="20px" fontWeight="500">
               USD Account:
             </Text>
+
             <Text
               textAlign="center"
               // mb="30px"

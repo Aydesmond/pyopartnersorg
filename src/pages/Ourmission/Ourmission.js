@@ -35,6 +35,10 @@ const OurMission = () => {
     navigate("/ourmission");
   };
 
+  const handleBoardNavigate = () => {
+    navigate("/our-board");
+  };
+
   return (
     <>
       <Flex w="100%" direction="column" h="auto">
@@ -54,6 +58,7 @@ const OurMission = () => {
             home={handleHomeNavigate}
             contact={handleContactNavigate}
             ourmission={handleMissionNavigate}
+            ourboard={handleBoardNavigate}
           />
         </Flex>
       </Flex>

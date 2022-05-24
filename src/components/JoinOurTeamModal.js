@@ -172,7 +172,10 @@ export default function JoinOurTeamModal({ isOpen, onOpen, onClose, pay }) {
 
           <ModalBody mt="50px" px={{ base: "15px", md: "30px" }}>
             <Text fontSize="20px" textAlign="center">
-              Thanks for Joining us
+              Thank you for registering your interest to volunteer You will be
+              contacted by our team on the next steps via email Kindly check
+              your inbox and spam. PYO Global Partners appreciates your lending
+              hand. For any enquiries, email: (volunteer@pyoglobalpartners.org)
             </Text>
             <Button
               mt={4}

@@ -7,12 +7,18 @@ import {
   Image,
   Spacer,
   useDisclosure,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Portal,
 } from "@chakra-ui/react";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 import logoPng from "../assets/images/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import DrawerComponent from "./DrawerComponent";
 
-const Navbar = ({ click, about, home, contact, ourmission }) => {
+const Navbar = ({ click, about, home, contact, ourmission, ourboard }) => {
   const [open, setOpen] = React.useState(false);
   const handleModal = () => {
     setOpen(true);
@@ -42,9 +48,23 @@ const Navbar = ({ click, about, home, contact, ourmission }) => {
             Home
           </Text>
 
-          <Text onClick={about} cursor="pointer">
-            About
-          </Text>
+          <Menu>
+            <MenuButton as={Text} colorScheme="white">
+              About
+            </MenuButton>
+
+            <Portal>
+              <MenuList>
+                <MenuItem onClick={about} cursor="pointer">
+                  Who we are
+                </MenuItem>
+
+                <MenuItem onClick={ourboard} cursor="pointer">
+                  Our Board
+                </MenuItem>
+              </MenuList>
+            </Portal>
+          </Menu>
 
           <Text onClick={ourmission} cursor="pointer">
             Our Mission
