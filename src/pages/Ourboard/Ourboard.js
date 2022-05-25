@@ -1,11 +1,9 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import TextTruncate from "react-text-truncate";
-import { Flex, Text, Box, Center } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import Navbar from "../../components/Navbar";
-import Hero from "../../components/Hero";
 import Footer from "../../components/Footer";
-import Volunteer from "../../components/Volunteer";
 import NewsLetter from "../../components/NewsLetter";
 import newBg from "../../assets/images/newBg.jpg";
 
@@ -85,6 +83,11 @@ const Ourboard = () => {
   const handleBoardNavigate = () => {
     navigate("/our-board");
   };
+
+  const handleFaqNavigate = () => {
+    navigate("/faq");
+  };
+
   return (
     <>
       <Flex w="100%" direction="column" h="auto">
@@ -105,6 +108,7 @@ const Ourboard = () => {
             contact={handleContactNavigate}
             ourmission={handleMissionNavigate}
             ourboard={handleBoardNavigate}
+            faq={handleFaqNavigate}
           />
         </Flex>
       </Flex>

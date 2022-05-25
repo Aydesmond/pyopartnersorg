@@ -18,7 +18,7 @@ import logoPng from "../assets/images/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import DrawerComponent from "./DrawerComponent";
 
-const Navbar = ({ click, about, home, contact, ourmission, ourboard }) => {
+const Navbar = ({ click, about, home, contact, ourmission, ourboard, faq }) => {
   const [open, setOpen] = React.useState(false);
   const handleModal = () => {
     setOpen(true);
@@ -70,7 +70,7 @@ const Navbar = ({ click, about, home, contact, ourmission, ourboard }) => {
             Our Mission
           </Text>
 
-          <Text onClick={ourmission} cursor="pointer">
+          <Text onClick={faq} cursor="pointer">
             FAQ
           </Text>
 

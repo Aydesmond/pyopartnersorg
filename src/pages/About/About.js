@@ -39,6 +39,10 @@ const About = () => {
     navigate("/our-board");
   };
 
+  const handleFaqNavigate = () => {
+    navigate("/faq");
+  };
+
   return (
     <>
       <Flex w="100%" direction="column" h="auto">
@@ -59,6 +63,7 @@ const About = () => {
             contact={handleContactNavigate}
             ourmission={handleMissionNavigate}
             ourboard={handleBoardNavigate}
+            faq={handleFaqNavigate}
           />
         </Flex>
       </Flex>
