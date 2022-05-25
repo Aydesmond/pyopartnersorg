@@ -43,15 +43,15 @@ const Volunteer = () => {
             fontWeight="400"
             color="white"
           >
-            You can also do more than give money. Please join our team.
+            Volunteers do not necessarily have the time; they just have the
+            heart, passion and collective vision of a great Nigeria
           </Text>
           <Text
             fontSize={{ base: "14px", md: "20px" }}
             fontWeight="400"
             color="white"
           >
-            There is so much to do, and we would be honoured to have you chip in
-            your time or talent, as little or much as you can.
+            Volunteer for a worthy cause.
           </Text>
           <Box w="30%">
             <Button
@@ -59,8 +59,8 @@ const Volunteer = () => {
               fontSize={{ base: "14px", md: "18px" }}
               fontWeight="500"
               p={{ base: 4, md: 8 }}
-              onClick={()=>{
-                  onOpen()
+              onClick={() => {
+                onOpen();
               }}
             >
               JOIN OUR TEAM
