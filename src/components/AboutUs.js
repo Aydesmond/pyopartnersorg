@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Image, Text, Spacer, Box } from "@chakra-ui/react";
+import { Flex, Text, Box } from "@chakra-ui/react";
 import profPng from "../assets/images/speech.png";
 
 const AboutUs = () => {
