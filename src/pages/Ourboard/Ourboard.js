@@ -125,7 +125,7 @@ const Ourboard = () => {
               <div className="flex flex-row pl-3 py-2 space-y-2 rounded-full  bg-green-400">
                 <p className="bg-green-200 rounded-full p-5">01</p>
 
-                <p className="max-w-lg font-bold pl-20 pt-2 text-white text-justify text-lg ">
+                <p className="max-w-lg font-bold text-white text-center text-lg md:pl-20 md:pt-2">
                   Dr. (Mrs.) Chinwe Azuka Onwudiegwu
                 </p>
               </div>
@@ -144,7 +144,7 @@ const Ourboard = () => {
               <div className="flex flex-row pl-3 py-2 space-y-2 rounded-full  bg-green-400">
                 <p className="bg-green-200 rounded-full p-5">02</p>
 
-                <p className="max-w-lg font-bold pl-20 pt-2 text-white text-justify text-lg ">
+                <p className="max-w-lg font-bold text-white text-center text-lg pl-5 pt-2 md:pl-20 md:pt-2">
                   Maryam Bukar Hassan
                 </p>
               </div>
@@ -178,11 +178,11 @@ const Ourboard = () => {
           {/* Second container */}
           <div className="flex flex-col space-y-10">
             {/* Item Two */}
-            <div className="flex flex-col px-3 space-y-3">
+            <div className="flex flex-col pt-10 space-y-3 md:pt-0 md:px-3">
               <div className="flex flex-row pl-3 py-2 space-y-2 rounded-full  bg-green-400">
                 <p className="bg-green-200 rounded-full p-5">03</p>
 
-                <p className="max-w-lg font-bold pl-20 pt-2 text-white text-justify text-lg ">
+                <p className="max-w-lg font-bold text-white text-center text-lg pl-5 pt-2 md:pl-20 md:pt-2">
                   Mrs. Martha O. Omoigui
                 </p>
               </div>
@@ -201,7 +201,7 @@ const Ourboard = () => {
               <div className="flex flex-row pl-3 py-2 space-y-2 rounded-full  bg-green-400">
                 <p className="bg-green-200 rounded-full p-5">04</p>
 
-                <p className="max-w-lg font-bold pl-20 pt-2 text-white text-justify text-lg ">
+                <p className="max-w-lg font-bold text-white text-center pl-5 pt-2 text-lg md:pl-20 md:pt-2">
                   Temi Okesanjo
                 </p>
               </div>
