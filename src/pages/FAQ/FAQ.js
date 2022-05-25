@@ -15,6 +15,7 @@ export default function FAQ() {
   const aboutSection = useRef(null);
   const homeSection = useRef(null);
   const contactSection = useRef(null);
+  const volunteer = useRef(null);
 
   const [box1, setBox1] = useState(false);
   const [box2, setBox2] = useState(false);
@@ -49,6 +50,15 @@ export default function FAQ() {
     navigate("/faq");
   };
 
+  const handleVolunteerNavigate = (ref) => {
+    if (ref !== null) {
+      window.scrollTo({
+        top: volunteer.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <Flex w="100%" direction="column" h="auto">
@@ -69,6 +79,7 @@ export default function FAQ() {
             ourmission={handleMissionNavigate}
             ourboard={handleBoardNavigate}
             faq={handleFaqNavigate}
+            volunteer={handleVolunteerNavigate}
           />
         </Flex>
       </Flex>

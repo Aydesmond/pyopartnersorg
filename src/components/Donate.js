@@ -13,7 +13,6 @@ import {
   InputGroup,
   InputLeftAddon,
   useToast,
- 
 } from "@chakra-ui/react";
 import validator from "validator";
 import { usePaystackPayment } from "react-paystack";
@@ -38,8 +37,6 @@ const Donate = () => {
   };
 
   const sortedCode = countryCopy.sort(sortingCode);
-
- 
 
   const states = [
     "Abia",
@@ -135,7 +132,7 @@ const Donate = () => {
       age: age,
       transaction_ref: reference.reference,
     };
-    
+
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     // // myHeaders.append("Authorization","Bearer" + JSON.parse(localStorage.getItem('jwt')));
@@ -217,7 +214,7 @@ const Donate = () => {
   return (
     <Flex gap={{ base: 3, md: 12 }} direction={{ base: "column", md: "row" }}>
       {/* <Button onClick={notify}>hahaha</Button> */}
-      
+
       <Box w={{ base: "100%", md: "50%" }}>
         <Flex
           w={{ base: "100%", md: "100%" }}
@@ -234,8 +231,10 @@ const Donate = () => {
             fontWeight="400"
             color="darkgreen"
           >
-            Elections are expensive. They still cost billions of Naira. Osinbajo
-            has never been a “money bag.” We need your help.
+            An African proverb says “if you want to go fast, go alone, if you
+            want to go far, go in a group”. The journey to fixing Nigeria is a
+            collective effort. A journey of a thousand miles begins with a step.
+            The step in this case is actualizing an Osinbajo presidency.
           </Text>
           <Text
             textAlign="justify"
@@ -243,9 +242,9 @@ const Donate = () => {
             fontWeight="400"
             color="darkgreen"
           >
-            We work every day investing in public and grassroot campaign
-            infrastructure, taking YOUR message to delegates. None of this work
-            is possible without your support.
+            Becoming the president of the most populous black nation in the
+            world is not only rigorous, time consuming and equally, financially
+            demanding
           </Text>
           {/* <Text textAlign='justify' fontSize={{base:'14px', md:'18px'}} fontWeight='400' color='darkgreen'>This campaign is led by everyday Nigerians telling themselves the truth: that Osinbajo is competent, experienced, and prepared to fix Nigeria. The best choice, if not the ONLY choice.</Text> */}
           <Text
@@ -254,9 +253,9 @@ const Donate = () => {
             fontWeight="400"
             color="darkgreen"
           >
-            Please support us financially. Also let us know your email address –
-            so we can thank you personally, and inform you of our activities
-            from funds raised. Thank you for your support!
+            PYO has committed himself to the rigor of and given up his time so
+            our children yet unborn can live in conditions that we currently
+            imagine.
           </Text>
           <Text
             textAlign="justify"
@@ -264,7 +263,9 @@ const Donate = () => {
             fontWeight="400"
             color="darkgreen"
           >
-            Join us to help take the Mission further!
+            So this is a call to action to donate to the PYO presidential
+            aspiration. It is a task that must be done for the future of
+            Nigerians.
           </Text>
         </Flex>
       </Box>

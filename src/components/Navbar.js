@@ -18,7 +18,7 @@ import logoPng from "../assets/images/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import DrawerComponent from "./DrawerComponent";
 
-const Navbar = ({ click, about, home, contact, ourmission, ourboard, faq }) => {
+const Navbar = ({ click, about, home, contact, ourmission, ourboard, faq, volunteer }) => {
   const [open, setOpen] = React.useState(false);
   const handleModal = () => {
     setOpen(true);
@@ -32,7 +32,7 @@ const Navbar = ({ click, about, home, contact, ourmission, ourboard, faq }) => {
       w="100%"
     >
       <Box>
-        <Image src={logoPng} alt="logo" />
+        <Image src={logoPng} alt="logo" width={70} height={70}/>
       </Box>
       <Spacer />
       <Flex
@@ -70,13 +70,17 @@ const Navbar = ({ click, about, home, contact, ourmission, ourboard, faq }) => {
             Our Mission
           </Text>
 
+          <Text onClick={volunteer} cursor="pointer">
+            Volunteer
+          </Text>
+
           <Text onClick={faq} cursor="pointer">
             FAQ
           </Text>
 
-          <Text onClick={""} cursor="pointer">
+          {/* <Text onClick={""} cursor="pointer">
             Resources
-          </Text>
+          </Text> */}
 
           <Text onClick={contact} cursor="pointer">
             Contact

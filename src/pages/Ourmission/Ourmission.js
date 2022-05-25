@@ -15,6 +15,8 @@ const OurMission = () => {
   const aboutSection = useRef(null);
   const homeSection = useRef(null);
   const contactSection = useRef(null);
+  const volunteer = useRef(null);
+  
   const handleDonateNavigate = () => {
     navigate("/");
   };
@@ -43,6 +45,15 @@ const OurMission = () => {
     navigate("/faq");
   };
 
+  const handleVolunteerNavigate = (ref) => {
+    if (ref !== null) {
+      window.scrollTo({
+        top: volunteer.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <Flex w="100%" direction="column" h="auto">
@@ -64,6 +75,7 @@ const OurMission = () => {
             ourmission={handleMissionNavigate}
             ourboard={handleBoardNavigate}
             faq={handleFaqNavigate}
+            volunteer={handleVolunteerNavigate}
           />
         </Flex>
       </Flex>

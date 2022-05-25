@@ -20,11 +20,21 @@ const Home = () => {
   const aboutSection = useRef(null);
   const homeSection = useRef(null);
   const contactSection = useRef(null);
+  const volunteer = useRef(null);
 
   const handleDonateNavigate = (ref) => {
     if (ref !== null) {
       window.scrollTo({
         top: donateSection.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleVolunteerNavigate = (ref) => {
+    if (ref !== null) {
+      window.scrollTo({
+        top: volunteer.current.offsetTop,
         behavior: "smooth",
       });
     }
@@ -91,6 +101,7 @@ const Home = () => {
           ourmission={handleMissionNavigate}
           ourboard={handleBoardNavigate}
           faq={handleFaqNavigate}
+          volunteer={handleVolunteerNavigate}
         />
 
         <Hero click={handleDonateNavigate} />
@@ -122,6 +133,7 @@ const Home = () => {
         w="100%"
         px={{ base: "20px", md: "150px" }}
         py={{ base: "15px", md: "120px" }}
+        ref={volunteer}
       >
         <Volunteer />
       </Flex>

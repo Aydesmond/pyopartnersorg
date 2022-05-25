@@ -16,6 +16,7 @@ import {
   HStack,
   Spacer,
   useToast,
+  Center,
 } from "@chakra-ui/react";
 
 export default function BankDetailsModal({ isOpen, onOpen, onClose }) {
@@ -107,8 +108,7 @@ export default function BankDetailsModal({ isOpen, onOpen, onClose }) {
       ) : (
         <ModalContent>
           {/* <ModalCloseButton color="#1E363F" bg="#E5E5E5" rounded="50%" /> */}
-
-          <Stack direction={["column", "row"]} py="20px" px="10px">
+          <Center py="20px" px="10px">
             <Button
               // mt={4}
               variant="action"
@@ -121,6 +121,22 @@ export default function BankDetailsModal({ isOpen, onOpen, onClose }) {
             >
               Donation Transfer Complete
             </Button>
+          </Center>
+
+          {/* <Stack direction={["column", "row"]} py="20px" px="10px">
+            <Button
+              // mt={4}
+              variant="action"
+              color="white"
+              py={{ base: 6, md: 6 }}
+              fontSize="18px"
+              fontWeight="500"
+              w={{ base: "100%", md: "50%" }}
+              onClick={() => handleAction("complete")}
+            >
+              Donation Transfer Complete
+            </Button>
+
             <Spacer />
             <Button
               // mt={4}
@@ -135,7 +151,7 @@ export default function BankDetailsModal({ isOpen, onOpen, onClose }) {
             >
               I will Donate Later
             </Button>
-          </Stack>
+          </Stack> */}
 
           <ModalBody mt="10px" px={{ base: "15px", md: "30px" }}>
             <Text fontSize="18px" fontWeight="400">
